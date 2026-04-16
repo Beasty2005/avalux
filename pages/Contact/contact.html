@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Avalux General Trading</title>
+  <link rel="stylesheet" href="../Home/home.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar__inner container">
+      <a href="mailto:info@avalux.ae" class="topbar__email">
+        <i class="fa fa-envelope"></i> info@avalux.ae
+      </a>
+      <div class="topbar__socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <img src="logo-02.png" alt="Avalux Logo" />
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../Home/home.html" class="nav__link">Home</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="../products/products.html" class="nav__link nav__link--has-arrow">Products <i class="fa fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Electrical Distribution <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">MCBs &amp; MCCBs</a></li>
+                  <li><a href="#">Distribution Boards</a></li>
+                  <li><a href="#">Surge Protection Devices</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Industrial Lighting <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">High Bay Fixtures</a></li>
+                  <li><a href="#">Floodlights</a></li>
+                  <li><a href="#">Batten Luminaires</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Architectural Lighting <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Adjustable Downlights</a></li>
+                  <li><a href="#">Trimless Downlights</a></li>
+                  <li><a href="#">Recessed LED Panels</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">External Lighting <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Bollards</a></li>
+                  <li><a href="#">High Mast Lights</a></li>
+                  <li><a href="#">Pole Lights</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Oil &amp; Gas <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Hazardous Area Fixtures</a></li>
+                  <li><a href="#">Explosion-Proof Lights</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Cable &amp; Wiring <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Power Cables</a></li>
+                  <li><a href="#">Control Cables</a></li>
+                  <li><a href="#">Cable Trays</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="../About Us/about.html" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link active">Contact Us</a></li>
+        </ul>
+        <a href="tel:+97156XXXXXXX" class="btn btn--gold nav__cta">
+          <i class="fa fa-phone"></i> Call Us
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <p class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa fa-chevron-right"></i>
+        <span>Contact Us</span>
+      </p>
+      <h1 class="page-hero__title">Get In <span>Touch</span></h1>
+      <p class="page-hero__sub">We'd love to hear from you. Reach out for product enquiries, project quotes, or technical support.</p>
+    </div>
+    <div class="page-hero__wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#0d1017"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CARDS ROW ===== -->
+  <section class="contact-info">
+    <div class="container">
+      <div class="contact-info__grid">
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">
+            <i class="fa fa-map-marker-alt"></i>
+          </div>
+          <h3>Visit Us</h3>
+          <p>Block B, Office B30-101<br />Sharjah, UAE</p>
+          <a href="https://maps.google.com" target="_blank" class="contact-info-card__link">
+            Get Directions <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="contact-info-card contact-info-card--featured">
+          <div class="contact-info-card__icon">
+            <i class="fa fa-phone-alt"></i>
+          </div>
+          <h3>Call Us</h3>
+          <p>
+            <a href="tel:+97156XXXXXXX">+971 56 XXX XXXX</a><br />
+            <a href="tel:+97156XXXXXXX">+971 56 XXX XXXX</a>
+          </p>
+          <a href="tel:+97156XXXXXXX" class="contact-info-card__link">
+            Call Now <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <h3>Email Us</h3>
+          <p>
+            <a href="mailto:info@avalux.ae">info@avalux.ae</a><br />
+            <a href="mailto:sales@avalux.ae">sales@avalux.ae</a>
+          </p>
+          <a href="mailto:info@avalux.ae" class="contact-info-card__link">
+            Send Email <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">
+            <i class="fa fa-clock"></i>
+          </div>
+          <h3>Working Hours</h3>
+          <p>
+            Mon – Fri: 8:00 AM – 6:00 PM<br />
+            Sat: 9:00 AM – 2:00 PM
+          </p>
+          <span class="contact-info-card__link contact-info-card__link--status">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="statusText">Checking status...</span>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTACT SECTION (Form + Map) ===== -->
+  <section class="contact-main">
+    <div class="container contact-main__inner">
+
+      <!-- ── Contact Form ── -->
+      <div class="contact-form-wrap">
+        <span class="section-tag">Send a Message</span>
+        <h2 class="section-title">How Can We Help?</h2>
+        <p class="contact-form-wrap__sub">Fill in the form below and one of our team members will get back to you within 24 hours.</p>
+
+        <!-- Enquiry type tabs -->
+        <div class="enquiry-tabs" id="enquiryTabs">
+          <button class="enquiry-tab enquiry-tab--active" data-type="General Enquiry">General Enquiry</button>
+          <button class="enquiry-tab" data-type="Product Quote">Product Quote</button>
+          <button class="enquiry-tab" data-type="Technical Support">Technical Support</button>
+          <button class="enquiry-tab" data-type="Partnership">Partnership</button>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+
+          <!-- Hidden enquiry type field -->
+          <input type="hidden" name="enquiry_type" id="enquiryTypeInput" value="General Enquiry" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span>*</span></label>
+              <input type="text" id="firstName" name="first_name" placeholder="John" required />
+              <span class="form-error" id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span>*</span></label>
+              <input type="text" id="lastName" name="last_name" placeholder="Smith" required />
+              <span class="form-error" id="lastNameError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your Company Ltd." />
+            </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="" disabled selected>Select your country</option>
+                <option>United Arab Emirates</option>
+                <option>Saudi Arabia</option>
+                <option>Qatar</option>
+                <option>Kuwait</option>
+                <option>Bahrain</option>
+                <option>Oman</option>
+                <option>Nigeria</option>
+                <option>Kenya</option>
+                <option>South Africa</option>
+                <option>Ghana</option>
+                <option>United Kingdom</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject <span>*</span></label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. Request for LED High Bay quote" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span>*</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, product requirements, or any questions you have..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <!-- File attachment -->
+          <div class="form-group">
+            <label for="attachment">Attachment <span class="label-optional">(Optional — PDF, DOC, JPG up to 5MB)</span></label>
+            <div class="file-input-wrap" id="fileInputWrap">
+              <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+              <div class="file-input-ui">
+                <i class="fa fa-paperclip"></i>
+                <span id="fileLabel">Click to attach a file or drag &amp; drop here</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group form-group--checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" id="consent" name="consent" required />
+              <span class="checkmark"></span>
+              I agree to be contacted by Avalux regarding my enquiry. We will not share your data with third parties.
+            </label>
+            <span class="form-error" id="consentError"></span>
+          </div>
+
+          <button type="submit" class="btn btn--gold form-submit" id="submitBtn">
+            <span id="submitLabel"><i class="fa fa-paper-plane"></i> Send Message</span>
+            <span id="submitSpinner" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Sending...</span>
+          </button>
+
+        </form>
+
+        <!-- Success message (hidden by default) -->
+        <div class="form-success" id="formSuccess">
+          <div class="form-success__icon"><i class="fa fa-check-circle"></i></div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. A member of the Avalux team will be in touch within 24 hours.</p>
+          <button class="btn btn--gold" id="resetFormBtn">Send Another Message</button>
+        </div>
+
+      </div>
+
+      <!-- ── Map + Quick Info ── -->
+      <div class="contact-aside">
+
+        <!-- Embedded Map -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.031430340303!2d55.394377073601945!3d25.336726326038466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bf1f54dc327%3A0x681007540c4c5453!2sHANEEN%20LIGHTING!5e0!3m2!1sen!2sae!4v1775919924605!5m2!1sen!2sae"
+            width="100%"
+            height="320"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Avalux Office Location">
+          </iframe>
+        </div>
+
+        <!-- Quick contact details -->
+        <div class="contact-aside__details">
+          <h3>Our Office</h3>
+          <ul>
+            <li>
+              <i class="fa fa-map-marker-alt"></i>
+              <div>
+                <strong>Avalux General Trading FZC</strong>
+                <span>Block B, Office B30-101, Sharjah, UAE</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-phone-alt"></i>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+97156XXXXXXX">+971 56 XXX XXXX</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@avalux.ae">info@avalux.ae</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa fa-clock"></i>
+              <div>
+                <strong>Office Hours</strong>
+                <span>Mon–Fri: 8AM–6PM &nbsp;|&nbsp; Sat: 9AM–2PM</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="contact-aside__social">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Quick answers to the questions we hear most often.</p>
+      </div>
+
+      <div class="faq__grid">
+
+        <div class="faq-item" data-faq>
+          <button class="faq-item__question" aria-expanded="false">
+            <span>What regions do you supply to?</span>
+            <i class="fa fa-plus"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>We supply to clients across the Middle East (UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman), Africa (Nigeria, Kenya, South Africa, Ghana, Tanzania, Egypt), and Europe (UK, Germany, France, Netherlands, and more). Contact us if you're outside these regions — we'll do our best to assist.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Do you offer bulk or project pricing?</span>
+            <i class="fa fa-plus"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes. We offer competitive bulk pricing and dedicated project pricing for contractors, developers, and procurement teams. Submit a quote request through our contact form with your product list and quantities for a tailored proposal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <button class="faq-item__question" aria-expanded="false">
+            <span>What certifications do your products carry?</span>
+            <i class="fa fa-plus"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Our products carry internationally recognised certifications including IEC, CE, ATEX (for hazardous-area fixtures), UL, and RoHS compliance. Specific certification details are available on individual product data sheets — contact our technical team for documentation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <button class="faq-item__question" aria-expanded="false">
+            <span>How long does delivery take?</span>
+            <i class="fa fa-plus"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Delivery timelines depend on the destination and product availability. For stock items, regional deliveries (UAE, GCC) typically take 3–7 working days. International shipments to Africa and Europe are estimated at 10–21 days. Express shipping options are available on request.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Can you assist with product specifications for a project?</span>
+            <i class="fa fa-plus"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Absolutely. Our technical team can review your project specifications and recommend the right products to meet performance, safety, and budget requirements. Send us your specifications via the contact form or email sales@avalux.ae.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Do you offer after-sales technical support?</span>
+            <i class="fa fa-plus"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes. We provide after-sales support including technical documentation, installation guidance, and warranty claims assistance. Reach us at info@avalux.ae or via phone during office hours for any post-purchase support needs.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__col footer__col--brand">
+        <a href="index.html"><img src="logo-02.png" alt="Avalux" class="footer__logo" /></a>
+        <p>Avalux General Trading FZC — your trusted partner for electrical and lighting solutions across the Middle East, Africa &amp; Europe.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Electrical Distribution</a></li>
+          <li><a href="#">Industrial Lighting</a></li>
+          <li><a href="#">Architectural Lighting</a></li>
+          <li><a href="#">Oil &amp; Gas</a></li>
+          <li><a href="#">External Lighting</a></li>
+          <li><a href="#">Cable &amp; Wiring</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li><i class="fa fa-map-marker-alt"></i> Block B, Office B30-101, Sharjah, UAE</li>
+          <li><i class="fa fa-phone"></i><a href="tel:+97156XXXXXXX">+971 56 XXX XXXX</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:info@avalux.ae">info@avalux.ae</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Avalux General Trading FZC. All rights reserved.</p>
+        <p>Designed with <i class="fa fa-bolt" style="color: var(--gold);"></i> by Avalux</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Home/home.js"></script>
+  <script src="./contact.js"></script>
+
+</body>
+</html>

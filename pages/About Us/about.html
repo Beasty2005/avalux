@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Avalux General Trading</title>
+  <link rel="stylesheet" href="../Home/home.css" />
+  <link rel="stylesheet" href="./about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar__inner container">
+      <a href="mailto:info@avalux.ae" class="topbar__email">
+        <i class="fa fa-envelope"></i> info@avalux.ae
+      </a>
+      <div class="topbar__socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="../Home/home.html" class="header__logo">
+        <img src="logo-02.png" alt="Avalux Logo" />
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../Home/home.html" class="nav__link">Home</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="../products/products.html" class="nav__link nav__link--has-arrow">Products <i class="fa fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Electrical Distribution <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">MCBs & MCCBs</a></li>
+                  <li><a href="#">Distribution Boards</a></li>
+                  <li><a href="#">Surge Protection Devices</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Industrial Lighting <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">High Bay Fixtures</a></li>
+                  <li><a href="#">Floodlights</a></li>
+                  <li><a href="#">Batten Luminaires</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Architectural Lighting <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Adjustable Downlights</a></li>
+                  <li><a href="#">Trimless Downlights</a></li>
+                  <li><a href="#">Recessed LED Panels</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">External Lighting <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Bollards</a></li>
+                  <li><a href="#">High Mast Lights</a></li>
+                  <li><a href="#">Pole Lights</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Oil &amp; Gas <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Hazardous Area Fixtures</a></li>
+                  <li><a href="#">Explosion-Proof Lights</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item dropdown__item--has-sub">
+                <a href="#">Cable &amp; Wiring <i class="fa fa-chevron-right"></i></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Power Cables</a></li>
+                  <li><a href="#">Control Cables</a></li>
+                  <li><a href="#">Cable Trays</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="./about.html" class="nav__link active">About Us</a></li>
+          <li class="nav__item"><a href="../Contact/contact.html" class="nav__link">Contact Us</a></li>
+        </ul>
+        <a href="tel:+97156XXXXXXX" class="btn btn--gold nav__cta">
+          <i class="fa fa-phone"></i> Call Us
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO (BANNER) ===== -->
+  <section class="page-hero">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80');"></div>
+    <div class="container page-hero__content">
+      <p class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa fa-chevron-right"></i>
+        <span>About Us</span>
+      </p>
+      <h1 class="page-hero__title">About <span>Avalux</span></h1>
+      <p class="page-hero__sub">Powering projects across the Middle East, Africa &amp; Europe since day one.</p>
+    </div>
+    <!-- Decorative bottom wave -->
+    <div class="page-hero__wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#0d1017"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE ARE ===== -->
+  <section class="who-we-are">
+    <div class="container who-we-are__inner">
+
+      <div class="who-we-are__image">
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80" alt="Avalux team at work" />
+        <div class="who-we-are__image-accent"></div>
+        <!-- Floating badge -->
+        <div class="who-we-are__badge">
+          <i class="fa fa-bolt"></i>
+          <span>Trusted Globally</span>
+        </div>
+      </div>
+
+      <div class="who-we-are__text">
+        <span class="section-tag">Who We Are</span>
+        <h2 class="section-title">Avalux General<br />Trading FZC</h2>
+        <div class="who-we-are__divider"></div>
+        <p>
+          Avalux General Trading FZC is an internationally active supplier of premium electrical and lighting solutions, headquartered in Sharjah, UAE. We serve contractors, consultants, developers, and procurement teams across <strong>Africa, the Middle East, and Europe</strong>.
+        </p>
+        <p>
+          Our strength lies in a carefully curated product portfolio that spans electrical distribution, industrial and architectural lighting, hazardous-area fixtures, cable systems, and more — all sourced from globally recognised manufacturers.
+        </p>
+        <p>
+          Whether you're building a high-rise in Dubai, an oil platform in the Gulf, or a commercial complex in London, Avalux delivers the right product, at the right time, with the right support.
+        </p>
+
+        <div class="who-we-are__highlights">
+          <div class="highlight-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Internationally certified products</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Competitive bulk pricing</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Fast regional delivery</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Dedicated technical support</span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn--gold">Get In Touch</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="container stats-bar__inner">
+      <div class="stat">
+        <i class="fa fa-globe"></i>
+        <span class="stat__number" data-target="30">0</span><span class="stat__symbol">+</span>
+        <span class="stat__label">Countries Served</span>
+      </div>
+      <div class="stat">
+        <i class="fa fa-box-open"></i>
+        <span class="stat__number" data-target="500">0</span><span class="stat__symbol">+</span>
+        <span class="stat__label">Products</span>
+      </div>
+      <div class="stat">
+        <i class="fa fa-handshake"></i>
+        <span class="stat__number" data-target="200">0</span><span class="stat__symbol">+</span>
+        <span class="stat__label">Happy Clients</span>
+      </div>
+      <div class="stat">
+        <i class="fa fa-award"></i>
+        <span class="stat__number" data-target="15">0</span><span class="stat__symbol">+</span>
+        <span class="stat__label">Years Experience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION / VISION / COMMITMENT ===== -->
+  <section class="values">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Core</span>
+        <h2 class="section-title">What Drives Us</h2>
+        <p class="section-desc">Three pillars that guide every decision we make and every project we support.</p>
+      </div>
+      <div class="values__grid">
+        <div class="value-card">
+          <div class="value-card__icon"><i class="fa fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To deliver high-quality electrical and lighting solutions that meet international standards, while providing dependable service and value to clients across Africa, the Middle East, and Europe.</p>
+        </div>
+        <div class="value-card value-card--featured">
+          <div class="value-card__icon"><i class="fa fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To be a trusted global supplier of electrical and lighting products, recognised for quality, reliability, and professional excellence in regional and international markets.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon"><i class="fa fa-star"></i></div>
+          <h3>Our Commitment</h3>
+          <p>Our commitment to adding value in every project has made us a partner of choice. We endeavour to excel in our services to achieve client satisfaction and continued partnership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT MAKES US DIFFERENT ===== -->
+  <section class="differentiators">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Avalux</span>
+        <h2 class="section-title">What Sets Us Apart</h2>
+        <p class="section-desc">We don't just supply products — we deliver solutions backed by expertise and commitment.</p>
+      </div>
+
+      <div class="diff__grid">
+
+        <div class="diff-card">
+          <div class="diff-card__number">01</div>
+          <div class="diff-card__icon"><i class="fa fa-certificate"></i></div>
+          <h3>Global Standards</h3>
+          <p>Every product in our portfolio meets or exceeds international safety and performance certifications including IEC, CE, ATEX, and UL standards.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__number">02</div>
+          <div class="diff-card__icon"><i class="fa fa-shipping-fast"></i></div>
+          <h3>Reliable Supply Chain</h3>
+          <p>Our established supplier relationships and regional warehousing ensure consistent stock availability and fast dispatch to any project location.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__number">03</div>
+          <div class="diff-card__icon"><i class="fa fa-headset"></i></div>
+          <h3>Expert Support</h3>
+          <p>Our team of electrical and lighting specialists provides product selection guidance, specification support, and after-sales technical assistance.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__number">04</div>
+          <div class="diff-card__icon"><i class="fa fa-tags"></i></div>
+          <h3>Competitive Pricing</h3>
+          <p>Direct supplier partnerships allow us to offer market-leading pricing on bulk orders without compromising on product quality or delivery timelines.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__number">05</div>
+          <div class="diff-card__icon"><i class="fa fa-leaf"></i></div>
+          <h3>Energy-Efficient Focus</h3>
+          <p>We actively promote LED and low-energy electrical solutions that help our clients reduce operational costs and meet sustainability targets.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__number">06</div>
+          <div class="diff-card__icon"><i class="fa fa-handshake"></i></div>
+          <h3>Long-Term Partnerships</h3>
+          <p>We build lasting relationships with our clients, offering ongoing support, product updates, and dedicated account management for repeat projects.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REGIONS WE SERVE ===== -->
+  <section class="regions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Reach</span>
+        <h2 class="section-title">Regions We Serve</h2>
+        <p class="section-desc">From our hub in Sharjah, UAE, we supply electrical and lighting solutions to projects worldwide.</p>
+      </div>
+
+      <div class="regions__grid">
+
+        <div class="region-card" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80');">
+          <div class="region-card__overlay"></div>
+          <div class="region-card__content">
+            <i class="fa fa-map-marker-alt"></i>
+            <h3>Middle East</h3>
+            <p>UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman</p>
+          </div>
+        </div>
+
+        <div class="region-card" style="background-image: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80');">
+          <div class="region-card__overlay"></div>
+          <div class="region-card__content">
+            <i class="fa fa-map-marker-alt"></i>
+            <h3>Africa</h3>
+            <p>Nigeria, Kenya, South Africa, Ghana, Tanzania, Egypt</p>
+          </div>
+        </div>
+
+        <div class="region-card" style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80');">
+          <div class="region-card__overlay"></div>
+          <div class="region-card__content">
+            <i class="fa fa-map-marker-alt"></i>
+            <h3>Europe</h3>
+            <p>UK, Germany, France, Netherlands, Italy, Spain</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM (optional section) ===== -->
+  <section class="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our People</span>
+        <h2 class="section-title">The Avalux Team</h2>
+        <p class="section-desc">Experienced professionals committed to delivering excellence on every project.</p>
+      </div>
+
+      <div class="team__grid">
+
+        <div class="team-card">
+          <div class="team-card__photo" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80');"></div>
+          <div class="team-card__info">
+            <h3>Ahmed Al Rashid</h3>
+            <span class="team-card__role">Chief Executive Officer</span>
+            <p>15+ years in electrical and lighting supply across the GCC and Africa.</p>
+            <div class="team-card__socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80');"></div>
+          <div class="team-card__info">
+            <h3>Sarah Mitchell</h3>
+            <span class="team-card__role">Head of Sales — Europe</span>
+            <p>Driving partnerships and business development across European markets.</p>
+            <div class="team-card__socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo" style="background-image: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80');"></div>
+          <div class="team-card__info">
+            <h3>Emmanuel Okafor</h3>
+            <span class="team-card__role">Regional Manager — Africa</span>
+            <p>Overseeing logistics, partnerships, and project delivery across African markets.</p>
+            <div class="team-card__socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card__photo" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80');"></div>
+          <div class="team-card__info">
+            <h3>Layla Hassan</h3>
+            <span class="team-card__role">Technical Specifications Lead</span>
+            <p>Electrical engineer specialising in product compliance and project specifications.</p>
+            <div class="team-card__socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="cta-banner__overlay"></div>
+    <div class="container cta-banner__content">
+      <h2>Ready to Work with Avalux?</h2>
+      <p>Reach out to our team for product enquiries, project quotes, or technical support.</p>
+      <div class="cta-banner__actions">
+        <a href="contact.html" class="btn btn--gold">Contact Us Today</a>
+        <a href="tel:+97156XXXXXXX" class="btn btn--outline-light">
+          <i class="fa fa-phone"></i> +971 56 XXX XXXX
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__col footer__col--brand">
+        <a href="index.html"><img src="logo-02.png" alt="Avalux" class="footer__logo" /></a>
+        <p>Avalux General Trading FZC — your trusted partner for electrical and lighting solutions across the Middle East, Africa &amp; Europe.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Electrical Distribution</a></li>
+          <li><a href="#">Industrial Lighting</a></li>
+          <li><a href="#">Architectural Lighting</a></li>
+          <li><a href="#">Oil &amp; Gas</a></li>
+          <li><a href="#">External Lighting</a></li>
+          <li><a href="#">Cable &amp; Wiring</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li><i class="fa fa-map-marker-alt"></i> Block B, Office B30-101, Sharjah, UAE</li>
+          <li><i class="fa fa-phone"></i><a href="tel:+97156XXXXXXX">+971 56 XXX XXXX</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:info@avalux.ae">info@avalux.ae</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Avalux General Trading FZC. All rights reserved.</p>
+        <p>Designed with <i class="fa fa-bolt" style="color: var(--gold);"></i> by Avalux</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
