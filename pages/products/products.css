@@ -234,9 +234,7 @@
   background: var(--gold-glow);
   color: var(--gold);
 }
-.sidebar-cat--active {
-  font-weight: 600;
-}
+.sidebar-cat--active { font-weight: 600; }
 .sidebar-cat:hover span,
 .sidebar-cat--active span {
   background: var(--gold);
@@ -395,9 +393,7 @@
 }
 
 /* List view toggle */
-.prod-grid.list-view {
-  grid-template-columns: 1fr;
-}
+.prod-grid.list-view { grid-template-columns: 1fr; }
 .prod-grid.list-view .prod-card {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -412,7 +408,7 @@
   justify-content: space-between;
 }
 
-/* Filtering animation */
+/* Card base */
 .prod-card {
   background: var(--dark);
   border: 1px solid var(--border);
@@ -426,23 +422,21 @@
   transform: translateY(-5px);
   box-shadow: var(--shadow-gold);
 }
-
-/* Hidden state for filter */
-.prod-card.hidden {
-  display: none;
-}
+.prod-card.hidden { display: none; }
 
 .prod-card__img {
   height: 210px;
   background-size: cover;
   background-position: center;
+  /* Fallback colour when image URL is # (placeholder) */
+  background-color: var(--slate);
   position: relative;
   overflow: hidden;
   transition: transform 0.5s ease;
 }
 .prod-card:hover .prod-card__img { transform: scale(1.03); }
 
-/* Category badge */
+/* ── Category Badges ─────────────────────────────────────── */
 .prod-card__badge {
   position: absolute;
   top: 14px;
@@ -458,11 +452,18 @@
   color: var(--black);
   z-index: 2;
 }
-.prod-card__badge--industrial { background: #3a7bd5; color: var(--white); }
-.prod-card__badge--arch       { background: #9c59b6; color: var(--white); }
-.prod-card__badge--external   { background: #27ae60; color: var(--white); }
-.prod-card__badge--oilgas     { background: #e67e22; color: var(--white); }
-.prod-card__badge--cable      { background: #e74c3c; color: var(--white); }
+/* Architectural — gold (default) */
+.prod-card__badge--arch       { background: var(--gold);  color: var(--black); }
+/* Decorative — soft rose/mauve */
+.prod-card__badge--decorative { background: #c0768a;       color: var(--white); }
+/* External — forest green */
+.prod-card__badge--external   { background: #27ae60;       color: var(--white); }
+/* High Mast — deep teal */
+.prod-card__badge--highmast   { background: #16808c;       color: var(--white); }
+/* Industrial — steel blue */
+.prod-card__badge--industrial { background: #3a7bd5;       color: var(--white); }
+/* Internal — warm purple */
+.prod-card__badge--internal   { background: #7d5cb8;       color: var(--white); }
 
 /* Hover overlay on image */
 .prod-card__overlay {
@@ -671,6 +672,8 @@
   min-height: 380px;
   background-size: cover;
   background-position: center;
+  /* Fallback when image is placeholder */
+  background-color: var(--slate);
   border-radius: var(--radius-lg) 0 0 var(--radius-lg);
 }
 
@@ -704,11 +707,7 @@
   line-height: 1.75;
 }
 
-.modal__specs {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+.modal__specs { display: flex; flex-direction: column; gap: 8px; }
 .modal__specs .spec-row {
   display: flex;
   justify-content: space-between;
